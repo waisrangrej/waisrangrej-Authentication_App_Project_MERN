@@ -5,11 +5,13 @@ import About from './pages/About'
 import SignIn from './pages/SignIn'
 import SignUp from './pages/SignUp'
 import Profile from './pages/Profile'
+import Nav from './assets/components/Nav'
 
 
 function App() {
   return (
     <BrowserRouter>
+    <Nav/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
