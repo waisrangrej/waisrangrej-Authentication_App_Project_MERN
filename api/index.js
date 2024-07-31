@@ -1,4 +1,4 @@
-
+import userRoute from '../api/routes/user.route.js'
 import express from 'express'
 import { DB_NAME } from './dbname.js'
 import mongoose from 'mongoose'
@@ -21,8 +21,8 @@ try {
 })
 ()
 
-
-
 app.listen(port,(req,res)=>{
     console.log(`server listening on port ${port}`);
 })
+
+app.use("/api/user", userRoute)
