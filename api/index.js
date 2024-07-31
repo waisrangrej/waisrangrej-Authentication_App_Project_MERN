@@ -1,4 +1,4 @@
-import { log } from 'console'
+
 import express from 'express'
 import { DB_NAME } from './dbname.js'
 import mongoose from 'mongoose'
